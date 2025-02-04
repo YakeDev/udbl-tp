@@ -16,6 +16,7 @@
 		--background-color: #2d2d2f;
 		--secondary-background-color: #2d2d2f;
 		--text-color: white;
+		--box-shadow: rgba(121, 121, 121, 0.1) 0px 8px 24px;
 	}
 }
 
@@ -37,6 +38,10 @@ body {
 }
 .mb-40 {
 	margin-bottom: 40px;
+}
+
+.pb-20 {
+	padding-bottom: 20px;
 }
 
 .btn {
@@ -68,6 +73,20 @@ body {
 }
 .title-left {
 	text-align: left;
+}
+
+.border-b {
+	border-bottom: 1px solid #a4a4a4;
+}
+.border-b-2 {
+	border-bottom: 2px solid #a4a4a4;
+}
+
+.bg-gray {
+	background-color: var(--secondary-background-color);
+}
+.bg-white {
+	background-color: var(--background-color);
 }
 
 /* Navigation bar */
@@ -350,6 +369,101 @@ main {
 	padding: 50px 0;
 }
 
+.programmes-container {
+	display: flex;
+	justify-content: end;
+}
+
+.programmes-content {
+	width: 60%;
+	margin-top: 20px;
+}
+
+.programme {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+}
+
+.programme p {
+	font-size: 1.15rem;
+}
+
+.programme-num {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 30px;
+	border-radius: 50%;
+	color: white;
+	background-color: var(--text-color);
+	font-weight: bold;
+	font-size: 1.4rem;
+	padding: 15px;
+}
+
+.programme-num-blue {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 75px;
+	height: 30px;
+	border-radius: 50%;
+	color: white;
+	background-color: var(--primary-background-color);
+	font-weight: bold;
+	font-size: 1.4rem;
+	padding: 15px;
+}
+
+.programme-num p,
+.programme-num-blue p {
+	line-height: 0;
+}
+
+/* Galery section */
+.galery-section {
+	padding: 0 0 25px 0;
+}
+
+.gallery-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+.gal-img-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	box-shadow: var(--box-shadow);
+}
+.gal-etudiant {
+	background-color: #1f1f20;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+
+.gal-etudiant p {
+	font-style: italic;
+}
+
+.gal-inscription {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /* Media query */
 @media screen and (max-width: 768px) {
 	.navigation-bar {
@@ -383,5 +497,10 @@ main {
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 0.5rem;
+	}
+
+	/* programmes */
+	.programmes-content {
+		width: 100%;
 	}
 }
