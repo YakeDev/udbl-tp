@@ -48,7 +48,7 @@ body {
 	margin-top: 20px;
 	background-color: var(--primary-background-color);
 	color: white;
-	padding: 0.9rem 1.5rem;
+	padding: 0.8rem 1.8rem;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -58,6 +58,7 @@ body {
 
 .btn-link {
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .btn:hover {
@@ -66,6 +67,7 @@ body {
 
 .section-header {
 	text-align: center;
+	line-height: 2.8rem;
 }
 
 .title-right {
@@ -464,6 +466,30 @@ main {
 	align-items: center;
 }
 
+/* Explore */
+.explore-section {
+	padding-bottom: 75px;
+}
+
+.explore-container {
+	width: 75%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	gap: 20px;
+}
+
+.explore-desc p {
+	padding-top: 25px;
+	/* font-size: 1.2rem; */
+}
+
+.div-bar {
+	height: 5px;
+	width: 85%;
+	background-color: var(--primary-background-color);
+}
+
 /* Media query */
 @media screen and (max-width: 768px) {
 	.navigation-bar {
@@ -478,8 +504,13 @@ main {
 		display: block;
 	}
 
+	/* Hero Section */
 	.hero-content {
 		width: 100%;
+	}
+
+	.section-title {
+		font-size: 1.8rem;
 	}
 
 	/* About section */
@@ -502,5 +533,35 @@ main {
 	/* programmes */
 	.programmes-content {
 		width: 100%;
+	}
+
+	.programme {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	/* Gallery */
+	.gallery-container {
+		grid-template-columns: 1fr;
+	}
+
+	.gal-etudiant,
+	.gal-inscription {
+		min-height: 350px;
+	}
+
+	/* Explore */
+	.explore-container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.div-bar {
+		height: 5px;
+		width: 65%;
+		background-color: var(--primary-background-color);
 	}
 }

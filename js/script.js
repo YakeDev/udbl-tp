@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function updateLogo() {
 		if (darkModeMediaQuery.matches) {
-			logo.src = '../images/erickay_dark.svg' // Chemin du logo pour le mode sombre
+			logo.src = './images/erickay_dark.svg' // Chemin du logo pour le mode sombre
 		} else {
-			logo.src = '../images/erickay_04.svg' // Chemin du logo pour le mode clair
+			logo.src = './images/erickay_04.svg' // Chemin du logo pour le mode clair
 		}
 	}
 
