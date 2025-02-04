@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EricKay</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<script defer>
+			document.addEventListener('DOMContentLoaded', () => {
+				if (
+					window.matchMedia &&
+					window.matchMedia('(prefers-color-scheme: dark)').matches
+				) {
+					document.documentElement.classList.add('dark-mode')
+				}
+			})
+		</script>
+	</head>
+	<body>
+		<header class="header">
+			<!-- navvigation bar -->
+			<nav class="navigation-bar">
+				<div class="container">
+					<div class="menu-bar">
+						<!-- Logo -->
+						<div class="logo">
+							<img id="logo" src="./images/erickay_04.svg" alt="Logo EricKay" />
+						</div>
+
+						<!-- Desktop Menu -->
+						<div class="desktop-menu">
+							<ul>
+								<li><a href="#" class="navigation-link">Home</a></li>
+								<li><a href="#" class="navigation-link">About</a></li>
+								<li><a href="#" class="navigation-link">Contact</a></li>
+							</ul>
+						</div>
+
+						<!-- Burger Menu (Mobile) -->
+						<button id="menu-button" class="mobile-menu-button">
+							<svg
+								class="menu-icon"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								viewBox="0 0 24 24">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M4 6h16M4 12h16m-7 6h7" />
+							</svg>
+						</button>
+					</div>
+
+					<!-- Mobile Menu (Hidden by default) -->
+					<div id="mobile-menu" class="mobile-menu">
+						<div class="mobile-menu-content">
+							<a href="#" class="navigation-link">Home</a>
+							<a href="#" class="navigation-link">About</a>
+							<a href="#" class="navigation-link">Contact</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- Hero section -->
+			<section class="hero-section">
+				<div class="hero-overlay">
+					<div class="container">
+						<div class="hero-container">
+							<div class="hero-content">
+								<h1>Université Don Bosco de Lubumbashi</h1>
+								<p>
+									Découvrez notre université renommée pour son excellence
+									académique et son environnement convivial.
+								</p>
+								<button class="btn cta-button">A propos d'udbl</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- About section -->
+			<section class="about-section">
+				<div class="container">
+					<div>
+						<div class="section-header">
+							<h2 class="section-title">A propos</h2>
+						</div>
+						<div class="card-container">
+							<div class="about-card">
+								<img
+									class="card-icon"
+									src="./images/home.svg"
+									alt=""
+									srcset="" />
+								<h3>Accueil</h3>
+								<p>
+									Découvrez notre université renommée pour son excellence
+									académique et ses installations modernes.
+								</p>
+								<div class="card-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+							<div class="about-card">
+								<img
+									class="card-icon"
+									src="./images/007-reading-book.svg"
+									alt=""
+									srcset="" />
+								<h3>Facultés</h3>
+								<p>
+									Explorez nos programmes d'études variés conçus pour préparer
+									les étudiants au succès professionnel.
+								</p>
+								<div class="card-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+							<div class="about-card">
+								<img
+									class="card-icon"
+									src="./images/006-calendar-1.svg"
+									alt=""
+									srcset="" />
+								<h3>Programmes</h3>
+								<p>
+									Notre corps professoral expérimenté et dévoué guide les
+									étudiants vers l’excellence académique et personnelle.
+								</p>
+								<div class="card-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Facultes -->
+			<section class="facultes-section">
+				<div class="container">
+					<div class="fac-content">
+						<!-- facultes head -->
+						<div class="fac-head">
+							<div class="fac-container">
+								<div class="fact-left">
+									<div class="fact-img-container">
+										<img src="./images/img-001.jpg" alt="" srcset="" />
+									</div>
+									<div class="fact-details mt-50">
+										<h3>Accueil</h3>
+										<p>
+											Bienvenue sur le site de l'université Don Bosco de
+											Lubumbashi. Découvrez notre histoire, nos programmesa
+											cadémiques et nos installations modernes au cœur de la
+											ville.
+										</p>
+										<div class="mt-50">
+											<a class="btn btn-link" href="http://">Lire plus</a>
+										</div>
+									</div>
+								</div>
+								<div class="fac-right">
+									<div class="section-header title-left mb-40">
+										<h2 class="section-title">Facultes</h2>
+									</div>
+									<div class="fact-img-container mt-100">
+										<img src="./images/img-002.jpg" alt="" srcset="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Facultes bottom -->
+						<div class="fac-bottom mt-100">
+							<div class="fac-card">
+								<h3>Vie étudiante</h3>
+								<p>
+									Découvrez notre université renommée pour son excellence
+									académique et ses installations modernes
+								</p>
+								<div class="fac-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+							<div class="fac-card">
+								<h3>Contact</h3>
+								<p>
+									Explorez nos programmes d'études variés conçus pour préparer
+									les étudiants au succès professionnel
+								</p>
+								<div class="fac-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+							<div class="fac-card">
+								<h3>Actualités</h3>
+								<p>
+									Notre corps professoral expérimenté etdévoué guide les
+									étudiants vers l'excellence académique et personnelle.
+								</p>
+								<div class="fac-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+							<div class="fac-card">
+								<h3>FAQ</h3>
+								<p>
+									Plongez dans un environnement d'apprentissage dynamique qui
+									encourage la créativité, l'innovation et l'engagement.
+								</p>
+								<div class="fac-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+							<div class="fac-card">
+								<h3>Accueil</h3>
+								<p>
+									Notre campus accueillant offre un cadre idéal pour étudier, se
+									connecter et s’épanouir pleinement.
+								</p>
+								<div class="fac-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+							<div class="fac-card">
+								<h3>Facultés</h3>
+								<p>
+									Rejoignez-nous pour une expérience éducative enrichissante qui
+									ouvre les portes vers un avenir prometteur
+								</p>
+								<div class="fac-link">
+									<a href="http://">Lire plus</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- programmes -->
+			<section class="programmes-section">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Programmes</h2>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Script -->
+		<script src="./js/script.js"></script>
+	</body>
+</html>
