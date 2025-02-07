@@ -279,7 +279,7 @@ main {
 /* Hero section */
 .hero-section {
 	height: 100dvh;
-	background: url('../images/hero-img-1.jpg') left center no-repeat;
+	background: url('../images/hero-img-1.webp') left center no-repeat;
 	background-size: cover;
 	background-color: #1575ff;
 	/* background-blend-mode: overlay; */
@@ -953,7 +953,6 @@ button:hover {
 	.footer-top {
 		grid-template-columns: 1fr;
 	}
-
 	.footer-phone p,
 	.footer-adress p,
 	.footer-hours p {
